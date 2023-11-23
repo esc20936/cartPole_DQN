@@ -1,19 +1,17 @@
-import gymnasium as gym
-import random
+import sys
+from CartPole.DQN_Agent_Class.DQNAgentClass import DQNAgent
+from CartPole.Let_User_Play.Let_User_Play import let_user_play
 
-env = gym.make("CartPole-v1",render_mode="human")
+def run_factory(mode='run'):
+    agent = DQNAgent()
+    if mode == 'train':
+        agent.run()
+    elif mode == 'test':
+        agent.test()
+    elif mode == 'play':
+        let_user_play()
+    else:
+        print("Invalid mode. Please choose 'train', 'play' or 'run'.")
 
-def Random_games():
-    for episode in range(100):
-        env.reset()
-        for t in range(500):
-            action = env.action_space.sample()
-
-            next_state, reward, done, info,_ = env.step(action)
-
-            print(t, next_state, reward, done, info, action)
-
-            if done:
-                break
-
-Random_games()
+mode = sys.argv[1]
+run_factory(mode=mode)
