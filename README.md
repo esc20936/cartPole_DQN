@@ -51,8 +51,7 @@ python Cartpole_DQN.py
 ```
 
 
-Run Client
-
+Corriendo programa principal
 
 ## Main Functions
 
