@@ -9,6 +9,7 @@ gymnasium = "*"
 tensorflow = "*"
 keras = "*"
 numpy = "*"
+matplotlib = "*"
 
 [dev-packages]
 

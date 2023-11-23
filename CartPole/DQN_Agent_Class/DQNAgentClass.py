@@ -14,6 +14,7 @@ class DQNAgent:
         self.action_size = self.env.action_space.n
         self.EPISODES = 1000
         self.memory = deque(maxlen=2000)
+        
         self.gamma = 0.95  
         self.epsilon = 1.0
         self.epsilon_min = 0.001
@@ -44,9 +45,6 @@ class DQNAgent:
         next_state = np.zeros((self.batch_size, self.state_size))
         action, reward, done = [], [], []
 
-        # do this before prediction
-        # for speedup, this could be done on the tensor level
-        # but easier to understand using a loop
         for i in range(self.batch_size):
             state[i] = minibatch[i][0]
             action.append(minibatch[i][1])
