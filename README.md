@@ -4,15 +4,9 @@ This project implements an XMPP based chat client. Important aspects of function
 
 ## Requirements
 
-- NodeJS version 18.16.1
-- NPM version 9.5.1
-- Bibliotecas de NodeJS:
-  - @xmpp/client
-  - @xmpp/debug
-  - fs
-  - path
-  - net
-  - readline
+- Ultima version de Python
+- Ambiente virtual
+
 
   
 ## Settings
