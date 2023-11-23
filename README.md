@@ -66,8 +66,9 @@ python main.py <mode>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [Python]
-- [Tensorflow]
+- Python
+- Tensorflow
+- Gymnasium (OpenAI)
 
 ## ✍️ Authors <a name = "authors"></a>
 
