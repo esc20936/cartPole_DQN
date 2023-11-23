@@ -2,7 +2,7 @@ import sys
 from CartPole.DQN_Agent_Class.DQNAgentClass import DQNAgent
 from CartPole.Let_User_Play.Let_User_Play import let_user_play
 
-def run_factory(mode='run'):
+def run_factory(mode='test'):
     agent = DQNAgent()
     if mode == 'train':
         agent.run()
